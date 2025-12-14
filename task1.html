@@ -106,9 +106,91 @@
         </tbody>
       </table>
     </article>
-    <hr>
-    
+    <hr><br><br>
 
-    <h2>System Analysis</h2>
+
+<!-- Pre-Order Now -->
+  <h2>Pre-Order Now</h2>
+  <form>
+    <fieldset>
+      <legend>Choose your model</legend>
+      <label for="colorchoose">Color:</label>
+      <input type="color"  name="colorchoose"><br><br>
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="quantity" name="quantity"><br><br>
+      <label for="start">Delivery Date:</label>
+      <input type="date" id="start" name="begin" value="" min="1997-01-01" max="2030-12-31">
+
+    </fieldset><br>
+    <label for="searchstores">Search nearby Stores:</label>
+    <input type="text" id="searchstores" name="searchstores"><br><br>
+    
+    <input type="button" value="Reserve">
+  </form>
+  <hr><br><br>
+
+<!-- Contact Us -->
+  <h2>Contact Us</h2>
+  <form>
+    <fieldset>
+      <legend>Basic Details</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="role">Job Role:</label>
+      <input type="text" name="role"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>More Details</legend>
+      <label for="uploadresume">Upload Resume:
+      <input type="submit" value="Choose file"> No file chosen</label><br><br>
+      <label for="satisfaction">Satisfaction</label>
+      <input type="range" name="satisfaction">
+    </fieldset><br>
+    <input type="submit" value="Submit">
+  </form>
+  <hr><br><br>
+
+<!-- System Analytics -->
+  <h2>System Analytics</h2>
+  <label for="ServerHealth">Server Health: </label><br>
+  <label for="Task">Task Completion: </label><br><br>
+ 
+  <table style="width: auto;" border="1" width="200px" height="auto">
+    <caption>Device Allocations</caption>
+    <tr>
+      <th rowspan="2">Device</th>
+      <th colspan="3">Usage</th>
+      <th rowspan="2">Status</th>
+    </tr>
+    <tr>
+      <th>Active</th>
+      <th colspan="2">Locations</th>
+    </tr>  
+    <tr>
+      <th rowspan="2">Laptop</th>
+      <th rowspan="2">50</th>
+      <th>HQ</th>
+      <th>30</th>
+      <th rowspan="2">Operational</th>
+    </tr>
+    <tr>
+      <th>Branch</th>
+      <th>20</th>
+    </tr>
+    <tr>
+      <th>Server</th>
+      <th colspan="3">Under Maintenance</th>
+      <th>-</th>
+    </tr>
+  </table>
+  <hr>
+
+
+
+
+
   </body>
 </html>
