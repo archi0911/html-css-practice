@@ -11,14 +11,16 @@
     <ul>
       <li><a href="https://example.com">Home</a></li>
       <li><a href="https://medium.com">Articles</a></li>
-      <li><a href="https://unsplash.com/photos/person-diving-on-pool-splashing-water-1qCSGzVEKKQ">Contact</a></li>
+      <li><a href="https://mail.google.com">Contact</a></li>
     </ul>
     <hr>
 
     <!-- SIDEBAR SECTION -->
     <h2>About the Author</h2>
-    <img src="img_author.jpg" alt="This is author's picture" style="width: 200px; height: 300px;">
-    <figcaption>Archi Prajapati</figcaption>
+    <figure>
+      <img src="img_author.jpg" alt="This is author's picture" style="width: 200px; height: 300px;">
+      <figcaption>Archi Prajapati</figcaption>
+    </figure>
     <p>
       Hello, I am Archi Prajapati. I am currently learning HTML and CSS from the
       basics to improve my web development skills. I am excited to build simple
@@ -155,8 +157,11 @@
 
 <!-- System Analytics -->
   <h2>System Analytics</h2>
-  <label for="ServerHealth">Server Health: </label><br>
-  <label for="Task">Task Completion: </label><br><br>
+  <label for="ServerHealth">Server Health: </label>
+  <progress id="ServerHealth" value="32" max="50" style="color: darkgreen;"> 32% </progress><br>
+
+  <label for="Task">Task Completion: </label>
+  <progress id="Task" value="92" max="200"> 92% </progress><br><br>
  
   <table style="width: auto;" border="1" width="200px" height="auto">
     <caption>Device Allocations</caption>
@@ -170,27 +175,23 @@
       <th colspan="2">Locations</th>
     </tr>  
     <tr>
-      <th rowspan="2">Laptop</th>
-      <th rowspan="2">50</th>
-      <th>HQ</th>
-      <th>30</th>
-      <th rowspan="2">Operational</th>
+      <td rowspan="2">Laptop</td>
+      <td rowspan="2">50</td>
+      <td>HQ</td>
+      <td>30</td>
+      <td rowspan="2">Operational</td>
     </tr>
     <tr>
-      <th>Branch</th>
-      <th>20</th>
+      <td>Branch</td>
+      <td>20</td>
     </tr>
     <tr>
-      <th>Server</th>
-      <th colspan="3">Under Maintenance</th>
-      <th>-</th>
+      <td>Server</td>
+      <td colspan="3">Under Maintenance</td>
+      <td>-</td>
     </tr>
   </table>
   <hr>
-
-
-
-
-
   </body>
 </html>
+
